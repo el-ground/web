@@ -32,7 +32,11 @@ function create() {
           this.data.url && XRExtras.AlmostThere.configure({url: this.data.url})
           XR.addCameraPipelineModule(XRExtras.AlmostThere.pipelineModule())
         }
+        this.load = load
         window.XRExtras && window.XR ? load() : window.addEventListener('xrandextrasloaded', load)
+      },
+      remove : function () {
+        window.removeEventListener('xrandextrasloaded', this.load)
       }
     })
 
@@ -46,7 +50,11 @@ function create() {
           XRExtras.Loading.setAppLoadedProvider(aframeDidLoad)
           XRExtras.Loading.showLoading({onxrloaded})
         }
+        this.load = load
         window.XRExtras ? load() : window.addEventListener('xrextrasloaded', load)
+      },
+      remove : function () {
+        window.removeEventListener('xrextrasloaded', this.load)
       }
     })
 
@@ -54,7 +62,11 @@ function create() {
     AFRAME.registerComponent('xrextras-runtime-error', {
       init: function() {
         const load = () => { XR.addCameraPipelineModule(XRExtras.RuntimeError.pipelineModule()) }
+        this.load = load
         window.XRExtras && window.XR ? load() : window.addEventListener('xrandextrasloaded', load)
+      },
+      remove : function () {
+        window.removeEventListener('xrextrasloaded', this.load)
       }
     })
 
