@@ -9,12 +9,12 @@
   <!--Camera Permissions-->
   <div id="requestingCameraPermissions" class="hidden" />
     <img id="requestingCameraIcon" src="//cdn.8thwall.com/web/img/loading/v1/camera-purple.png" />
-    Tap "Allow" so we can<br>augment your reality.
+    증강현실을 위해 <br> "허용"을 눌러주세요!
   </div>
 
   <!--Permission error, iOS-->
   <div id="cameraPermissionsErrorApple" class="absolute-fill hidden" />
-    Refresh the page to enable<br>your camera for AR
+    증강현실 카메라를 키기 위해서 <br> 새로고침 해주세요!
     <img id="cameraPermissionsErrorAppleArrow" src="//cdn.8thwall.com/web/img/loading/v1/arrow.png" />
     <img id="cameraPermissionsErrorAppleReloadCamera" src="//cdn.8thwall.com/web/img/loading/v1/reload-camera.png" />
   </div>
@@ -24,66 +24,66 @@
     <div id="cameraPermissionsCameraIcon">
       <img src="//cdn.8thwall.com/web/img/loading/v1/camera-purple.png" />
     </div>
-    <div class="loading-error-header">Let's enable your camera</div>
+    <div class="loading-error-header">증강현실 카메라를 켜볼까요?</div>
     <ol class="loading-error-instructions">
-      <li>Tap the <img src="//cdn.8thwall.com/web/img/loading/v1/ellipsis.png"> in the top right</li>
-      <li>Tap <span class="highlight">Settings</li>
+      <li>우측 상단의  <img src="//cdn.8thwall.com/web/img/loading/v1/ellipsis.png"> 를 눌러주세요.</li>
+      <li> <span class="highlight"> 설정</span>을 눌러주세요.</li>
       <li class="chrome-instruction hidden">
-        <span class="highlight">Site settings</span>
+        <span class="highlight">페이지 설정</span>
       </li>
       <li class="chrome-instruction hidden">
-        <span class="highlight">Camera</span>
+        <span class="highlight">카메라</span>
       </li>
       <li class="chrome-instruction hidden">
-        <span class="highlight">Blocked</span>
+        <span class="camera-instruction-block domain-view">apps.8thwall.com</span>
         <br>
-        <span class="camera-instruction-block domain-view">apps.8thwall.com</span>
+        <span class="highlight">이 차단돼 있어요.</span>
       </li>
       <li class="chrome-instruction hidden">
-        <span class="camera-instruction-button">CLEAR & RESET</span>
+        <span class="camera-instruction-button">초기화</span>
       </li>
       <li class="samsung-instruction hidden">
-        <span class="highlight">Advanced</span>
+        <span class="highlight">고급</span>
       </li>
       <li class="samsung-instruction hidden">
-        <span class="highlight">Manage website data</span>
+        <span class="highlight">웹사이트 데이터 관리</span>
       </li>
       <li class="samsung-instruction hidden">
-        Press and hold<br>
         <span class="camera-instruction-block domain-view">apps.8thwall.com</span>
+        를 꾹 눌러주세요
       </li>
       <li class="samsung-instruction hidden">
-        <span class="highlight" style="color: #1500ba">DELETE</span>
+        <span class="highlight" style="color: #1500ba">삭제</span>
       </li>
     </ol>
     <div class="loading-error-footer">
       <img src="//cdn.8thwall.com/web/img/loading/v1/reload.png" />
-      Then, reload the page to experience some AR magic!
+      페이지를 새로고침 하시고 증강현실을 느껴봐요!
     </div>
   </div>
 
     <!--iOS devicemotion sensor is disabled -->
   <div id="deviceMotionErrorApple" class="absolute-fill hidden">
-    <div class="loading-error-header">Let's enable your motion sensors</div>
+    <div class="loading-error-header">움직임 센서를 켜볼까요?!</div>
     <ol class="loading-error-instructions">
-      <li>Open <img src="https://cdn.8thwall.com/web/img/loading/v1/settings-icon-ios.png" style="max-height: 4vh"><b>Settings</b></li>
-      <li>Select <img src="https://cdn.8thwall.com/web/img/loading/v1/safari-icon.png" style="max-height: 4vh"><b>Safari</b></li>
-      <li>Enable <span class="highlight">Motion&nbsp;&amp;&nbsp;Orientation Access</span></li>
-      <li>Reload the page <img src="//cdn.8thwall.com/web/img/loading/v1/reload.png"></li>
+      <li> <img src="https://cdn.8thwall.com/web/img/loading/v1/settings-icon-ios.png" style="max-height: 4vh"><b>설정</b>을 눌러주세요.</li>
+      <li><img src="https://cdn.8thwall.com/web/img/loading/v1/safari-icon.png" style="max-height: 4vh"><b>Safari</b>를 눌러주세요.</li>
+      <li><span class="highlight">움직임&nbsp;&amp;&nbsp;기울기</span>을 허용해주세요.</li>
+      <li>페이지를 새로고칩 해주세요. <img src="//cdn.8thwall.com/web/img/loading/v1/reload.png"></li>
     </ol>
     <!-- Empty footer to take up space -->
     <div class="loading-error-footer"></div>
   </div>
 
   <div id="userPromptError" class="permission-error absolute-fill hidden">
-    <h1>Permissions were denied.</h1>
-    <p>You need to accept permissions to continue.</p>
+    <h1>접근 권한을 거절당했어요.</h1>
+    <p>권한을 허용해야 진행 가능해요.</p>
     <button id="reloadButton" class="main-button" onClick="window.location.reload()">Refresh</button>
   </div>
 
   <div id="motionPermissionsErrorApple" class="permission-error absolute-fill hidden">
-    <h1>Permissions were denied.</h1>
-    <p>You've prevented the page from accessing your motion sensors.</p>
-    <p>Please close out of Safari to reenable your motion sensors.</p>
+    <h1>접근 권한을 거절당했어요.</h1>
+    <p>움직임 센서 접근 권한을 허용하지 않으셨네요?</p>
+    <p>브라우저를 다시 켜서 허용해 주세요!</p>
   </div>
 </div>
