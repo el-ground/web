@@ -4,3 +4,6 @@
 
 # Mac OS
 **/.DS_Store
+
+# vim
+*.swp
