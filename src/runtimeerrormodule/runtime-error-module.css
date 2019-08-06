@@ -37,7 +37,6 @@
 }
 
 .error-text-header {
-  font-family: 'Varela-Round', sans-serif;
   font-size: 18pt;
   color: #323232;
   letter-spacing: .37;
@@ -45,7 +44,6 @@
 }
 
 .error-text-hint {
-  font-family: 'Raleway-Regular', sans-serif;
   font-size: 14pt;
   color: #A8A8BA;
   letter-spacing: .37;

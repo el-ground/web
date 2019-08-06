@@ -5,7 +5,6 @@
 
 #loadingContainer {
   z-index: 800;
-  font-family: 'Varela-Round', sans-serif;
 }
 
 .absolute-fill {
@@ -154,7 +153,6 @@
 }
 
 .loading-error-instructions {
-  font-family: 'Raleway-Regular', sans-serif;
   color: #2D2E43;
   font-size: 2.5vh;
   list-style: none;
@@ -175,7 +173,6 @@
 }
 
 .loading-error-instructions > li:before {
-  font-family: 'Varela-Round', sans-serif;
   position: absolute;
   width: 6vh;
   height: 6vh;
@@ -193,7 +190,6 @@
 
 .highlight {
   color: #7611B7;
-  font-family: 'Raleway-Bold', sans-serif;
   font-weight: bold;
 }
 
